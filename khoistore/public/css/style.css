@@ -28,32 +28,50 @@
         font-size: 2rem;
         transition: all .2s ease-in-out .3s; }
         .navbar-item--logo_mix__1 {
-          animation: AK 2s infinite; }
+          animation: AK 3.5s infinite; }
         .navbar-item--logo_mix__2 {
-          animation: AHO 2s infinite; }
+          animation: AHO 3.5s infinite; }
         .navbar-item--logo_mix__3 {
-          animation: AHO 2s infinite; }
+          animation: AHO 3.5s infinite; }
         .navbar-item--logo_mix__4 {
-          animation: AI 2s infinite; }
+          animation: AI 3.5s infinite; }
   .navbar-link {
     text-decoration: none;
     font-weight: 800;
     font-family: fantasy; }
 
 @keyframes AK {
-  from {
+  0% {
     left: 11%; }
-  to {
-    left: 0%; } }
+  25% {
+    left: 0%; }
+  50% {
+    left: 11%; }
+  75% {
+    left: 0%; }
+  100% {
+    left: 11%; } }
 
 @keyframes AHO {
-  from {
+  0% {
     color: transparent; }
-  to {
-    color: black; } }
+  25% {
+    color: black; }
+  50% {
+    color: transparent; }
+  75% {
+    color: black; }
+  100% {
+    color: transparent; } }
 
 @keyframes AI {
-  from {
+  0% {
     right: 11%; }
-  to {
-    right: 0%; } }
+  25% {
+    right: 0%; }
+  50% {
+    right: 11%; }
+  75% {
+    right: 0%; }
+  100% {
+    right: 11%; } }
