@@ -5,10 +5,10 @@ export default function navbar() {
         <div className="navbar">
                 <ul className="navbar-list">
                   <li className="navbar-item">
-                    <a href className="navbar-link">HOME</a>
+                    <a href="true" className="navbar-link">HOME</a>
                   </li>
                   <li className="navbar-item">
-                    <a href className="navbar-link">SHOP</a>
+                    <a href="true" className="navbar-link">SHOP</a>
                   </li>
                   <li className="navbar-item navbar-item--logo">
                         <span className="navbar-item--logo_mix navbar-item--logo_mix__1">K</span>
@@ -18,10 +18,10 @@ export default function navbar() {
                     
                   </li>
                   <li className="navbar-item">
-                    <a href className="navbar-link">COLLECTIONS</a>
+                    <a href="true" className="navbar-link">COLLECTIONS</a>
                   </li>
                   <li className="navbar-item">
-                    <a href className="navbar-link">ABOUT</a>
+                    <a href="true" className="navbar-link">ABOUT</a>
                   </li>
                 </ul>
         </div>

@@ -1,14 +1,16 @@
 .navbar {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-image: url("../../image/smoke.png");
+  background-size: contain;
+  background-position: 0rem 3rem; }
   .navbar-list {
     list-style-type: none;
     display: flex;
     margin: 0 25%;
     padding: 2rem 0;
     align-items: center;
-    border: 1px solid;
     border-top: none; }
   .navbar-item {
     padding: .5rem;
@@ -26,19 +28,21 @@
         position: relative;
         font-family: fantasy;
         font-size: 2rem;
+        color: #505050;
         transition: all .2s ease-in-out .3s; }
         .navbar-item--logo_mix__1 {
-          animation: AK 3.5s infinite; }
+          animation: AK 7.5s infinite; }
         .navbar-item--logo_mix__2 {
-          animation: AHO 3.5s infinite; }
+          animation: AHO 7.5s infinite; }
         .navbar-item--logo_mix__3 {
-          animation: AHO 3.5s infinite; }
+          animation: AHO 7.5s infinite; }
         .navbar-item--logo_mix__4 {
-          animation: AI 3.5s infinite; }
+          animation: AI 7.5s infinite; }
   .navbar-link {
     text-decoration: none;
     font-weight: 800;
-    font-family: fantasy; }
+    font-family: fantasy;
+    color: #505050; }
 
 @keyframes AK {
   0% {
@@ -56,11 +60,11 @@
   0% {
     color: transparent; }
   25% {
-    color: black; }
+    color: #505050; }
   50% {
     color: transparent; }
   75% {
-    color: black; }
+    color: #505050; }
   100% {
     color: transparent; } }
 

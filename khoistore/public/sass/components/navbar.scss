@@ -2,14 +2,20 @@
     position: relative;
     width: 100%;
     height: 100%;
+    background-image: url('../../image/smoke.png');
+    background-size: contain; 
+    background-position: 0rem 3rem;
     &-list{
         list-style-type: none;
         display: flex;
         margin: 0 25%;
         padding: 2rem 0;
         align-items: center;
-        border:1px solid;
         border-top: none;
+        // background-image: url('../../image/smoke.png');
+        // background-size: contain; 
+        // background-position: -9rem 3rem;
+        // overflow: hidden;
     }
     &-item{
         padding: .5rem;
@@ -17,28 +23,31 @@
         flex-grow: 1;
         text-align: center;
         justify-items: center;
+        
         &--logo{
             position: relative;
             flex-grow: 3;
             display: flex;
             justify-content: center;
             align-items: center;
+            
             &_mix{
                 position: relative;
                 font-family: fantasy;
                 font-size: 2rem;
+                color:#505050;
                 transition: all .2s ease-in-out .3s;
                 &__1{
-                    animation : AK 3.5s infinite;
+                    animation : AK 7.5s infinite;
                 }
                 &__2{
-                    animation : AHO 3.5s infinite;
+                    animation : AHO 7.5s infinite;
                 }
                 &__3{
-                    animation : AHO 3.5s infinite;
+                    animation : AHO 7.5s infinite;
                 }
                 &__4{
-                    animation : AI 3.5s infinite;
+                    animation : AI 7.5s infinite;
                 }
             }
         }
@@ -47,5 +56,6 @@
         text-decoration : none;
         font-weight: 800;
         font-family: fantasy;
+        color: 	#505050;
     }
 }
