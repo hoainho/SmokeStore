@@ -23,34 +23,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover &_mix__1{
-                left: 0%;
-            }
-            &:hover &_mix__2{
-                color: black;
-            }
-            &:hover &_mix__3{
-                color: black;
-            }
-            &:hover &_mix__4{
-                right: 0%;
-            }
             &_mix{
                 position: relative;
                 font-family: fantasy;
                 font-size: 2rem;
                 transition: all .2s ease-in-out .3s;
                 &__1{
-                    left: 11%;
+                    animation : AK 2s infinite;
                 }
                 &__2{
-                    color: transparent;
+                    animation : AHO 2s infinite;
                 }
                 &__3{
-                    color: transparent;
+                    animation : AHO 2s infinite;
                 }
                 &__4{
-                    right: 11%;
+                    animation : AI 2s infinite;
                 }
             }
         }

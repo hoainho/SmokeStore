@@ -22,28 +22,38 @@
       display: flex;
       justify-content: center;
       align-items: center; }
-      .navbar-item--logo:hover .navbar-item--logo_mix__1 {
-        left: 0%; }
-      .navbar-item--logo:hover .navbar-item--logo_mix__2 {
-        color: black; }
-      .navbar-item--logo:hover .navbar-item--logo_mix__3 {
-        color: black; }
-      .navbar-item--logo:hover .navbar-item--logo_mix__4 {
-        right: 0%; }
       .navbar-item--logo_mix {
         position: relative;
         font-family: fantasy;
         font-size: 2rem;
         transition: all .2s ease-in-out .3s; }
         .navbar-item--logo_mix__1 {
-          left: 11%; }
+          animation: AK 2s infinite; }
         .navbar-item--logo_mix__2 {
-          color: transparent; }
+          animation: AHO 2s infinite; }
         .navbar-item--logo_mix__3 {
-          color: transparent; }
+          animation: AHO 2s infinite; }
         .navbar-item--logo_mix__4 {
-          right: 11%; }
+          animation: AI 2s infinite; }
   .navbar-link {
     text-decoration: none;
     font-weight: 800;
     font-family: fantasy; }
+
+@keyframes AK {
+  from {
+    left: 11%; }
+  to {
+    left: 0%; } }
+
+@keyframes AHO {
+  from {
+    color: transparent; }
+  to {
+    color: black; } }
+
+@keyframes AI {
+  from {
+    right: 11%; }
+  to {
+    right: 0%; } }
