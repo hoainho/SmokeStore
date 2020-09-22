@@ -1,0 +1,76 @@
+.smoke{
+    position: relative;
+    &_container{
+        position: relative;
+        &__item:nth-child(1){
+            position: absolute;
+            bottom: 10rem;
+            animation: SurfingL 10s infinite;
+        }
+        &__item:nth-child(2){
+            position: absolute;
+            bottom: 2rem;
+            animation: SurfingL 14s infinite;
+        }
+        &__item:nth-child(3){
+            position: absolute;
+            bottom: -8rem;
+            animation: SurfingL 19s infinite;
+        }
+        &__item:nth-child(4){
+            position: absolute;
+            bottom: -17rem;
+            animation: SurfingR 20s infinite;
+        }
+        &__item:nth-child(5){
+            position: absolute;
+            bottom: -22rem;
+            animation: SurfingR 17s infinite;
+        }
+        &__item:nth-child(6){
+            position: absolute;
+            bottom: -33rem;
+            animation: SurfingL 18s infinite;
+        }
+        &__item:nth-child(7){
+            position: absolute;
+            bottom: -38rem;
+            animation: SurfingR 12s infinite;
+        }
+        &__item:nth-child(8){
+            position: absolute;
+            bottom: -42rem;
+            animation: SurfingR 15s infinite;
+        }
+        &__item:nth-child(9){
+            position: absolute;
+            bottom: 8rem;
+            animation: SurfingL 19s infinite;
+        }
+        &__item:nth-child(10){
+            position: absolute;
+            bottom: 5rem;
+            animation: SurfingR 17.5s infinite;
+        }
+        &__item:nth-child(11){
+            position: absolute;
+            bottom: 1rem;
+            animation: SurfingR 16s infinite;
+        }
+        &__item:nth-child(12){
+            position: absolute;
+            bottom: -12rem;
+            animation: SurfingL 19.2s infinite;
+        }
+        &__item:nth-child(13){
+            position: absolute;
+            bottom: -17rem;
+            animation: SurfingR 20.1s infinite;
+        }
+        &__item:nth-child(14){
+            position: absolute;
+            bottom: -22rem;
+            animation: SurfingR 17s infinite;
+        }
+    }
+}
