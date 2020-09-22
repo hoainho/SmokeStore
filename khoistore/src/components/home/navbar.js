@@ -15,7 +15,6 @@ export default function navbar() {
                         <span className="navbar-item--logo_mix navbar-item--logo_mix__2">H</span>
                         <span className="navbar-item--logo_mix navbar-item--logo_mix__3">O</span>
                         <span className="navbar-item--logo_mix navbar-item--logo_mix__4">I</span>
-                    
                   </li>
                   <li className="navbar-item">
                     <a href="true" className="navbar-link">COLLECTIONS</a>

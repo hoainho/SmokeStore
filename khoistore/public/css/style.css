@@ -1,17 +1,11 @@
 .navbar {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../image/smoke.png");
-  background-size: contain;
-  background-position: 0rem 3rem; }
+  position: relative; }
   .navbar-list {
     list-style-type: none;
     display: flex;
     margin: 0 25%;
     padding: 2rem 0;
-    align-items: center;
-    border-top: none; }
+    align-items: center; }
   .navbar-item {
     padding: .5rem;
     margin: 0 1rem;
@@ -28,7 +22,7 @@
         position: relative;
         font-family: fantasy;
         font-size: 2rem;
-        color: #505050;
+        color: #383838;
         transition: all .2s ease-in-out .3s; }
         .navbar-item--logo_mix__1 {
           animation: AK 7.5s infinite; }
@@ -79,3 +73,85 @@
     right: 0%; }
   100% {
     right: 11%; } }
+
+@keyframes SurfingL {
+  from {
+    left: -40rem; }
+  to {
+    left: 100rem; } }
+
+@keyframes SurfingR {
+  from {
+    right: -135rem; }
+  to {
+    right: 0rem; } }
+
+.home {
+  overflow-x: hidden;
+  background: url(../../image/bgFashion.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: 96rem 48rem;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.smoke {
+  position: relative; }
+  .smoke_container {
+    position: relative; }
+    .smoke_container__item:nth-child(1) {
+      position: absolute;
+      bottom: 10rem;
+      animation: SurfingL 10s infinite; }
+    .smoke_container__item:nth-child(2) {
+      position: absolute;
+      bottom: 2rem;
+      animation: SurfingL 14s infinite; }
+    .smoke_container__item:nth-child(3) {
+      position: absolute;
+      bottom: -8rem;
+      animation: SurfingL 19s infinite; }
+    .smoke_container__item:nth-child(4) {
+      position: absolute;
+      bottom: -17rem;
+      animation: SurfingR 20s infinite; }
+    .smoke_container__item:nth-child(5) {
+      position: absolute;
+      bottom: -22rem;
+      animation: SurfingR 17s infinite; }
+    .smoke_container__item:nth-child(6) {
+      position: absolute;
+      bottom: -33rem;
+      animation: SurfingL 18s infinite; }
+    .smoke_container__item:nth-child(7) {
+      position: absolute;
+      bottom: -38rem;
+      animation: SurfingR 12s infinite; }
+    .smoke_container__item:nth-child(8) {
+      position: absolute;
+      bottom: -42rem;
+      animation: SurfingR 15s infinite; }
+    .smoke_container__item:nth-child(9) {
+      position: absolute;
+      bottom: 8rem;
+      animation: SurfingL 19s infinite; }
+    .smoke_container__item:nth-child(10) {
+      position: absolute;
+      bottom: 5rem;
+      animation: SurfingR 17.5s infinite; }
+    .smoke_container__item:nth-child(11) {
+      position: absolute;
+      bottom: 1rem;
+      animation: SurfingR 16s infinite; }
+    .smoke_container__item:nth-child(12) {
+      position: absolute;
+      bottom: -12rem;
+      animation: SurfingL 19.2s infinite; }
+    .smoke_container__item:nth-child(13) {
+      position: absolute;
+      bottom: -17rem;
+      animation: SurfingR 20.1s infinite; }
+    .smoke_container__item:nth-child(14) {
+      position: absolute;
+      bottom: -22rem;
+      animation: SurfingR 17s infinite; }

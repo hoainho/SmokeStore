@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from './navbar';
-function App() {
+import Smoke from '../UIkits/smoke';
+export default function App() {
   return (
     <div>
-       <Navbar/>
+       <div className="home">
+        <Navbar/>
+        <Smoke/>
+       </div>
     </div>
   );
 }
-
-export default App;
