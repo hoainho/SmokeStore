@@ -86,8 +86,14 @@
   to {
     right: 0rem; } }
 
+@keyframes Scroll {
+  from {
+    top: -4rem; }
+  to {
+    top: 3rem; } }
+
 .home {
-  overflow-x: hidden;
+  overflow: hidden;
   background: url(../../image/bgFashion.jpg);
   width: 100vw;
   height: 100vh;
@@ -155,3 +161,33 @@
       position: absolute;
       bottom: -22rem;
       animation: SurfingR 17s infinite; }
+
+.buttonScr {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  cursor: pointer; }
+  .buttonScr-item {
+    font-size: 3rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    animation: Scroll 3s ease-in-out 2.5s infinite;
+    cursor: pointer; }
+
+.Arrival {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+  .Arrival-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .Arrival-item {
+    padding: 1rem;
+    margin: 1.5rem; }
