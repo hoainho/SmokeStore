@@ -8,10 +8,6 @@ export default function Arrival() {
                 <ArrivalItem/>
                 <ArrivalItem/>
             </div>
-            <div className="Arrival-container">
-                <ArrivalItem/>
-                <ArrivalItem/>
-            </div>
        </div>
     </div>
   );
