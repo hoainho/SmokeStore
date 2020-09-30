@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import Smoke from '../UIkits/smoke';
 import Button from '../UIkits/buttonScr';
-import Arrival from './Arrival/Arrival';
+import Collection from './Collection/Collection';
 export default function App() {
   return (
     <div>
@@ -11,7 +11,7 @@ export default function App() {
           <Smoke/>
           <Button/>
        </div>
-       <Arrival/>
+       <Collection/>
     </div>
   );
 }

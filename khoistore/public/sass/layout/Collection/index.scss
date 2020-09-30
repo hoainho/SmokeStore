@@ -1,0 +1,74 @@
+.Collection{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../image/photomodel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-item{
+        position: relative;
+        width: 12%;
+        height: 25%;
+        left:10%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+        background-image: url(../../../image/product.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid;
+        &_introduce{
+            position: relative;
+            width: 65%;
+            height: auto;
+            border: 1px solid;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            &__name{
+                display:flex;
+                flex-direction: row;
+                margin: .1rem 0;
+                font-size: .5rem;
+                padding: 0 .1rem;
+                &___title{
+
+                }
+                &___content{
+                    padding: 0 .1rem;
+
+                }
+            }
+            &__material{
+                display:flex;
+                flex-direction: row;
+                margin: .1rem 0;
+                padding: 0 .1rem;
+                font-size: .5rem;
+
+                &___title{
+
+                }
+                &___content{
+                    padding: 0 .1rem;
+
+                }
+            }
+            &__price{
+                display:flex;
+                flex-direction: row;
+                margin: .1rem 0;
+                padding: 0 .1rem;
+                font-size: .5rem;
+                
+                &___title{
+
+                }
+                &___content{
+                    padding: 0 .1rem;
+
+                }
+            }
+        }
+    }
+}
