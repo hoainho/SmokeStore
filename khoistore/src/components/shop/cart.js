@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import {CartContext} from '../reducer/CartContext';
 export const  Cart =()=>{
-    const [cart, setCart] = useContext(CartContext);
+    const [cart, setCart] = useContext(CartContext);                        
     console.log(cart)
     const price = cart.reduce((a,b) => a + b.price , 0 )
     return (
