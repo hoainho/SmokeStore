@@ -1,18 +1,13 @@
 .navbar{
-    position: relative;
-    // background-image: url('../../image/smoke.png');
-    // background-size: contain; 
-    // background-position: 0rem 3rem;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
     &-list{
         list-style-type: none;
         display: flex;
         margin: 0 25%;
         padding: 2rem 0;
         align-items: center;
-        // background-image: url('../../image/smoke.png');
-        // background-size: contain; 
-        // background-position: -9rem 3rem;
-        // overflow: hidden;
     }
     &-item{
         padding: .5rem;

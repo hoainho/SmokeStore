@@ -16,9 +16,7 @@ export default function CollectionItem() {
                   <span className="Collection-item_introduce__price___content"> 500.000 </span>
                 </div>
            </div>
-          {/* <div className="Collection-monument">
-              <img src="../../../image/photomodel.jpg" class="img-responsive" alt="photomodel" />
-          </div> */}
+       
        </div> 
   );
 }

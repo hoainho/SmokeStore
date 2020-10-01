@@ -1,0 +1,29 @@
+.Product{
+    position: relative;
+    top: 10rem;
+    left: 5rem;
+    display: flex;
+    flex-direction: row;
+    &-item{
+        margin: 1rem;
+        position: relative;
+        text-align: center;
+        &_name{
+            font-size: 1.5rem;
+        }
+        &_price{
+            font-size: 1rem;
+        }
+    }
+    &-cart{
+        position: relative;
+        top: 10rem;
+        border: 1px solid ;
+        border-radius: 30px;
+        width: 25rem;
+        height: auto;
+        &_item{
+            text-align: center;
+        }
+    }
+}
