@@ -4,7 +4,9 @@
   box-sizing: border-box; }
 
 .navbar {
-  position: relative; }
+  position: absolute;
+  width: 100%;
+  z-index: 99999; }
   .navbar-list {
     list-style-type: none;
     display: flex;
@@ -234,3 +236,27 @@
         font-size: .5rem; }
         .Collection-item_introduce__price___content {
           padding: 0 .1rem; }
+
+.Product {
+  position: relative;
+  top: 10rem;
+  left: 5rem;
+  display: flex;
+  flex-direction: row; }
+  .Product-item {
+    margin: 1rem;
+    position: relative;
+    text-align: center; }
+    .Product-item_name {
+      font-size: 1.5rem; }
+    .Product-item_price {
+      font-size: 1rem; }
+  .Product-cart {
+    position: relative;
+    top: 10rem;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 25rem;
+    height: auto; }
+    .Product-cart_item {
+      text-align: center; }
