@@ -1,9 +1,6 @@
 .Product{
     position: relative;
     top: 10rem;
-    left: 5rem;
-    display: flex;
-    flex-direction: row;
     &-item{
         margin: 1rem;
         position: relative;
@@ -17,7 +14,9 @@
     }
     &-cart{
         position: relative;
-        top: 10rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
         border: 1px solid ;
         border-radius: 30px;
         width: 25rem;
@@ -25,5 +24,27 @@
         &_item{
             text-align: center;
         }
+    }
+    &__toolbar{
+        border: 1px solid black;
+        border-radius: 30px;
+        &-list{
+            display: flex;
+            flex-direction: row;
+            margin: 0 5rem;
+            padding: 2rem 0;
+            &__search{
+                margin: 0 2rem;
+                flex: 5;
+            }
+            &__sort{
+                flex: 1;
+            }
+        }
+    }
+    &__state{
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
 }
