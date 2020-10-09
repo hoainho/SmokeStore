@@ -1,9 +1,10 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect, useRef} from 'react';
 import ProductItem from './ProductItem';
 import {API_test} from '../const/API_URL';
 import axios from 'axios';
 export default function Index(){
     const [data, setData] = useState([]);
+    const [value, setValue] = useState('');
     
     useEffect(()=> {
         axios.get(API_test)
@@ -12,23 +13,30 @@ export default function Index(){
     }, [])
     let item //temp
     data.length === 0 ? //if data state = null
-    item = ( <h1> Loadingg </h1>) //animation loadding
+    item = ( <h1> Loading... </h1> ) //animation loadding
     : //else data != null
     item = (
         data.map((item) => 
             <ProductItem name={item.name} price= {item.price} key={item.id}/>
         ))
+    const search = useRef(null);
+    const onSearch = () => {
+        search.current.focus();
+    }
     return(
         
         <div className="Product">
             <div className="Product__toolbar">
                 <div className="Product__toolbar-list">
                     <select name="sortName" id="input" className="form-control Product__toolbar-list__sort">
-                        <option value="1">A {'->'} Z</option>
+                        <option value="1">A  {'->'} Z</option>
                         <option value="-1">Z {'->'} A</option>
                     </select>
-                    <input type="search" name=""  className="form-control Product__toolbar-list__search" placeholder="Enter your Keyword"/>
-                    <select name="sortPrice" id="input" className="form-control Product__toolbar-list__sort">
+                    <input type="text"  ref={search} className="form-control Product__toolbar-list__search"  placeholder="Enter your Keyword"/>
+                    
+                    <button type="button" class="btn btn-large btn-block btn-default Product__toolbar-list__button" onClick={ onSearch }> Search </button>
+
+                    <select name="sortPrice" className="form-control Product__toolbar-list__sort">
                         <option value="1">Increase</option>
                         <option value="-1">Decrease</option>
                     </select>
