@@ -11,14 +11,20 @@ export default function Index(){
             .then( res  => { setData(res.data) })
             .catch(err  => { throw(err) })
     }, [])
-    let item //temp
+
+    function onSetColor(color){
+        console.log(color);
+    }
+    let item; //temp
     data.length === 0 ? //if data state = null
-    item = ( <h1> Loading... </h1> ) //animation loadding
+    item = ( <h1> ... </h1> ) //animation loadding
     : //else data != null
     item = (
         data.map((item) => 
-            <ProductItem name={item.name} price= {item.price} key={item.id}/>
+            <ProductItem name={item.name} price= {item.price} key={item.id} onReciverColor={ onSetColor} />
         ))
+
+    //refs
     const search = useRef(null);
     const onSearch = () => {
         search.current.focus();
@@ -32,6 +38,7 @@ export default function Index(){
                         <option value="1">A  {'->'} Z</option>
                         <option value="-1">Z {'->'} A</option>
                     </select>
+                    
                     <input type="text"  ref={search} className="form-control Product__toolbar-list__search"  placeholder="Enter your Keyword"/>
                     
                     <button type="button" class="btn btn-large btn-block btn-default Product__toolbar-list__button" onClick={ onSearch }> Search </button>
@@ -43,7 +50,7 @@ export default function Index(){
                 </div>
             </div>
             <div className="Product__state">
-                {item}  
+                {item }  
             </div>
            
         </div>

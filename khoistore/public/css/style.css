@@ -1,45 +1,43 @@
-.Product {
-  position: relative;
-  top: 10rem; }
-  .Product-item {
-    margin: 1rem;
-    position: relative;
-    text-align: center; }
-    .Product-item_name {
-      font-size: 1.5rem; }
-    .Product-item_price {
-      font-size: 1rem; }
-  .Product-cart {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border: 1px solid;
-    border-radius: 30px;
-    width: 25rem;
-    height: auto; }
-    .Product-cart_item {
-      text-align: center; }
-  .Product__toolbar {
-    border: 1px solid black;
-    border-radius: 30px; }
-    .Product__toolbar-list {
-      display: flex;
-      flex-direction: row;
-      margin: 0 5rem;
-      padding: 2rem 0; }
-      .Product__toolbar-list__search {
-        margin: 0 2rem;
-        flex: 5; }
-      .Product__toolbar-list__sort {
-        flex: 1; }
-      .Product__toolbar-list__button {
-        flex: 1; }
-  .Product__state {
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 99999; }
+  .navbar-list {
+    list-style-type: none;
     display: flex;
-    flex-direction: row; }
-em--logo_mix__4 {
+    margin: 0 25%;
+    padding: 2rem 0;
+    align-items: center; }
+  .navbar-item {
+    padding: .5rem;
+    margin: 0 1rem;
+    flex-grow: 1;
+    text-align: center;
+    justify-items: center; }
+    .navbar-item--logo {
+      position: relative;
+      flex-grow: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .navbar-item--logo_mix {
+        position: relative;
+        font-family: fantasy;
+        font-size: 2rem;
+        color: #383838;
+        transition: all .2s ease-in-out .3s; }
+        .navbar-item--logo_mix__1 {
+          animation: AK 7.5s infinite; }
+        .navbar-item--logo_mix__2 {
+          animation: AHO 7.5s infinite; }
+        .navbar-item--logo_mix__3 {
+          animation: AHO 7.5s infinite; }
+        .navbar-item--logo_mix__4 {
           animation: AI 7.5s infinite; }
   .navbar-link {
     text-decoration: none;
@@ -250,6 +248,19 @@ em--logo_mix__4 {
       font-size: 1.5rem; }
     .Product-item_price {
       font-size: 1rem; }
+    .Product-item_listColor {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: 2rem; }
+      .Product-item_listColor__item {
+        position: relative;
+        width: 15%;
+        height: 100%;
+        padding: 1rem;
+        margin: .5rem; }
   .Product-cart {
     position: relative;
     top: 50%;
@@ -280,3 +291,6 @@ em--logo_mix__4 {
     position: relative;
     display: flex;
     flex-direction: row; }
+
+.activeColor {
+  border: 1px solid blue; }
